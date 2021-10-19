@@ -61,36 +61,103 @@ export default function ContactSlider() {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <>
-      <Slider className="pt-5 px-5" ref={sliderRef} {...settings}>
+      <Slider className="pt-5 px-2" ref={sliderRef} {...settings}>
         <div
           className="
-        item              
+            item              
             px-5
+            md:px-3
+            lg:px-5
             py-5
             border-2
             rounded
             shadow-lg
             hover:border-primary
+            mx-auto
           "
         >
           <figure className="flex pb-5">
-            <img src={viezh} alt="viezh" className="pr-5" />
+            <img src={viezh} alt="viezh" className="pr-5 md:pr-2 lg:pr-5" />
             <div className="flex flex-col">
-              <h4>Viezh Robert</h4>
-              <span className="text-secondary text-sm">Warsaw, Poland</span>
+              <h4 className="md:whitespace-nowrap">Viezh Robert</h4>
+              <span className="text-secondary whitespace-nowrap text-xs md:text-sm">
+                Warsaw, <br />
+                Poland
+              </span>
+              <div class="lg:hidden flex items-start">
+                <span class="pr-1 text-xs md:text-sm">4.5</span>
+                <img src={star} alt="star" width="" class="w-3 md:w-4" />
+              </div>
             </div>
-            <div className="pl-20 flex items-start text-secondary text-base">
-              <span className="pl-5 pr-2 text-right">4.5</span>
-              <img
-                src={star}
-                alt="star"
-                width="16px"
-                style={{ paddingTop: "0.125rem" }}
-              />
+            <div
+              className="
+                pl-2
+                pt-1
+                hidden
+                lg:pl-2 lg:flex
+                items-start text-secondary text-base"
+            >
+              <span className="px-1 text-xs md:text-sm">4.5</span>
+              <img src={star} alt="star" width="" class="w-3 md:w-4" />
+            </div>
+          </figure>
+          <div className="text-base max-w-xs">
+            “Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor.
+            Ut rhoncus sollicitudin metus, ac lobortis felis dignissim et. Fusce
+            arcu ex”
+          </div>
+        </div>
+
+        <div
+          className="
+            item              
+            px-5
+            md:px-3
+            lg:px-5
+            py-5
+            border-2
+            rounded
+            shadow-lg
+            hover:border-primary
+            mx-auto
+          "
+        >
+          <figure className="flex pb-5">
+            <img src={yessica} alt="yessica" className="pr-5 md:pr-2 lg:pr-5" />
+            <div className="flex flex-col">
+              <h4 className="md:whitespace-nowrap">Yessica Christy</h4>
+              <span className="text-secondary whitespace-nowrap text-xs md:text-sm">
+                Shanxi, <br />
+                China
+              </span>
+              <div class="lg:hidden flex items-start">
+                <span class="pr-1 text-xs md:text-sm">4.5</span>
+                <img src={star} alt="star" width="" class="w-3 md:w-4" />
+              </div>
+            </div>
+            <div
+              className="
+                pl-2
+                pt-1
+                hidden
+                lg:pl-2 lg:flex
+                items-start text-secondary text-base"
+            >
+              <span className="px-1 text-xs md:text-sm">4.5</span>
+              <img src={star} alt="star" width="" class="w-3 md:w-4" />
             </div>
           </figure>
           <div className="text-base max-w-xs">
@@ -101,29 +168,41 @@ export default function ContactSlider() {
         </div>
         <div
           className="
-        item              
+            item              
             px-5
+            md:px-3
+            lg:px-5
             py-5
             border-2
             rounded
             shadow-lg
             hover:border-primary
+            mx-auto
           "
         >
           <figure className="flex pb-5">
-            <img src={yessica} alt="yessica" className="pr-5" />
+            <img src={kim} alt="kim" className="pr-5 md:pr-2 lg:pr-5" />
             <div className="flex flex-col">
-              <h4>Yessica Christy</h4>
-              <span className="text-secondary text-sm">Shanxi, China</span>
+              <h4 className="md:whitespace-nowrap">Kim Young Jou</h4>
+              <span className="text-secondary whitespace-nowrap text-xs md:text-sm">
+                Seoul, <br />
+                South Korea
+              </span>
+              <div class="lg:hidden flex items-start">
+                <span class="pr-1 text-xs md:text-sm">4.5</span>
+                <img src={star} alt="star" width="" class="w-3 md:w-4" />
+              </div>
             </div>
-            <div className="pl-20 flex items-start text-secondary text-base">
-              <span className="pl-5 pr-2 text-right">4.5</span>
-              <img
-                src={star}
-                alt="star"
-                width="16px"
-                style={{ paddingTop: "0.125rem" }}
-              />
+            <div
+              className="
+                pl-2
+                pt-1
+                hidden
+                lg:pl-2 lg:flex
+                items-start text-secondary text-base"
+            >
+              <span className="px-1 text-xs md:text-sm">4.5</span>
+              <img src={star} alt="star" width="" class="w-3 md:w-4" />
             </div>
           </figure>
           <div className="text-base max-w-xs">
@@ -134,29 +213,87 @@ export default function ContactSlider() {
         </div>
         <div
           className="
-        item              
+            item              
             px-5
+            md:px-3
+            lg:px-5
             py-5
             border-2
             rounded
             shadow-lg
             hover:border-primary
+            mx-auto
           "
         >
           <figure className="flex pb-5">
-            <img src={kim} alt="kim" className="pr-5" />
+            <img src={viezh} alt="viezh" className="pr-5 md:pr-2 lg:pr-5" />
             <div className="flex flex-col">
-              <h4>Kim Young Jou</h4>
-              <span className="text-secondary text-sm">Seoul, South Korea</span>
+              <h4 className="md:whitespace-nowrap">Viezh Robert</h4>
+              <span className="text-secondary whitespace-nowrap text-xs md:text-sm">
+                Warsaw, <br />
+                Poland
+              </span>
+              <div class="lg:hidden flex items-start">
+                <span class="pr-1 text-xs md:text-sm">4.5</span>
+                <img src={star} alt="star" width="" class="w-3 md:w-4" />
+              </div>
             </div>
-            <div className="pl-20 flex items-start text-secondary text-base">
-              <span className="pl-5 pr-2 text-right">4.5</span>
-              <img
-                src={star}
-                alt="star"
-                width="16px"
-                style={{ paddingTop: "0.125rem" }}
-              />
+            <div
+              className="
+                pl-2
+                pt-1
+                hidden
+                lg:pl-2 lg:flex
+                items-start text-secondary text-base"
+            >
+              <span className="px-1 text-xs md:text-sm">4.5</span>
+              <img src={star} alt="star" width="" class="w-3 md:w-4" />
+            </div>
+          </figure>
+          <div className="text-base max-w-xs">
+            “Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor.
+            Ut rhoncus sollicitudin metus, ac lobortis felis dignissim et. Fusce
+            arcu ex”
+          </div>
+        </div>
+
+        <div
+          className="
+            item              
+            px-5
+            md:px-3
+            lg:px-5
+            py-5
+            border-2
+            rounded
+            shadow-lg
+            hover:border-primary
+            mx-auto
+          "
+        >
+          <figure className="flex pb-5">
+            <img src={yessica} alt="yessica" className="pr-5 md:pr-2 lg:pr-5" />
+            <div className="flex flex-col">
+              <h4 className="md:whitespace-nowrap">Yessica Christy</h4>
+              <span className="text-secondary whitespace-nowrap text-xs md:text-sm">
+                Shanxi, <br />
+                China
+              </span>
+              <div class="lg:hidden flex items-start">
+                <span class="pr-1 text-xs md:text-sm">4.5</span>
+                <img src={star} alt="star" width="" class="w-3 md:w-4" />
+              </div>
+            </div>
+            <div
+              className="
+                pl-2
+                pt-1
+                hidden
+                lg:pl-2 lg:flex
+                items-start text-secondary text-base"
+            >
+              <span className="px-1 text-xs md:text-sm">4.5</span>
+              <img src={star} alt="star" width="" class="w-3 md:w-4" />
             </div>
           </figure>
           <div className="text-base max-w-xs">
@@ -167,62 +304,41 @@ export default function ContactSlider() {
         </div>
         <div
           className="
-        item              
+            item              
             px-5
+            md:px-3
+            lg:px-5
             py-5
             border-2
             rounded
             shadow-lg
             hover:border-primary
+            mx-auto
           "
         >
           <figure className="flex pb-5">
-            <img src={viezh} alt="viezh" className="pr-5" />
+            <img src={kim} alt="kim" className="pr-5 md:pr-2 lg:pr-5" />
             <div className="flex flex-col">
-              <h4>Viezh Robert</h4>
-              <span className="text-secondary text-sm">Warsaw, Poland</span>
+              <h4 className="md:whitespace-nowrap">Kim Young Jou</h4>
+              <span className="text-secondary whitespace-nowrap text-xs md:text-sm">
+                Seoul, <br />
+                South Korea
+              </span>
+              <div class="lg:hidden flex items-start">
+                <span class="pr-1 text-xs md:text-sm">4.5</span>
+                <img src={star} alt="star" width="" class="w-3 md:w-4" />
+              </div>
             </div>
-            <div className="pl-20 flex items-start text-secondary text-base">
-              <span className="pl-5 pr-2 text-right">4.5</span>
-              <img
-                src={star}
-                alt="star"
-                width="16px"
-                style={{ paddingTop: "0.125rem" }}
-              />
-            </div>
-          </figure>
-          <div className="text-base max-w-xs">
-            “Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor.
-            Ut rhoncus sollicitudin metus, ac lobortis felis dignissim et. Fusce
-            arcu ex”
-          </div>
-        </div>
-        <div
-          className="
-        item              
-            px-5
-            py-5
-            border-2
-            rounded
-            shadow-lg
-            hover:border-primary
-          "
-        >
-          <figure className="flex pb-5">
-            <img src={yessica} alt="yessica" className="pr-5" />
-            <div className="flex flex-col">
-              <h4>Yessica Christy</h4>
-              <span className="text-secondary text-sm">Shanxi, China</span>
-            </div>
-            <div className="pl-20 flex items-start text-secondary text-base">
-              <span className="pl-5 pr-2 text-right">4.5</span>
-              <img
-                src={star}
-                alt="star"
-                width="16px"
-                style={{ paddingTop: "0.125rem" }}
-              />
+            <div
+              className="
+                pl-2
+                pt-1
+                hidden
+                lg:pl-2 lg:flex
+                items-start text-secondary text-base"
+            >
+              <span className="px-1 text-xs md:text-sm">4.5</span>
+              <img src={star} alt="star" width="" class="w-3 md:w-4" />
             </div>
           </figure>
           <div className="text-base max-w-xs">
@@ -232,7 +348,7 @@ export default function ContactSlider() {
           </div>
         </div>
       </Slider>
-      <div className="pt-5 px-20 flex justify-end">
+      <div className="md:pt-5 px-20 hidden md:flex justify-end">
         <Arrow
           type="next"
           onClick={() => {

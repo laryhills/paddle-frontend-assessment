@@ -10,7 +10,7 @@ function Repo({
   repoOwnerName,
 }) {
   return (
-    <figure className="md:flex bg-gray-100 rounded-xl p-6 max-w-2xl">
+    <figure className="flex flex-col items-center md:flex-row bg-gray-100 rounded-xl p-6 max-w-2xl">
       <img
         className="border-2 border-gray-300 m-2"
         src={repoOwnerAvatar}

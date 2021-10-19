@@ -33,6 +33,13 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--lightblack);
     }
 
+    @media screen and (max-width: 768px) {
+        h3 {
+            width: auto;
+            height: auto;
+        }
+    }
+
     h4 {
         font-weight: 500;
         font-size: 18px;
@@ -41,10 +48,20 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--lightblack);
     }   
 
+    @media screen and (max-width: 768px) {
+        h4 {
+            font-size: 12px;
+        }
+    }
     
     ${"" /* Caontact Slider */}
     .slick-track {
         margin-left: -200px;
+    }
+    @media screen and (max-width: 768px) {
+        .slick-track {
+            margin-left: 0px;
+        }
     }
     .slick-slide > div {
         margin: 0 10px;

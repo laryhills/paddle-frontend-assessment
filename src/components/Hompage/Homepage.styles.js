@@ -2,6 +2,16 @@ import styled from "styled-components";
 import rectangle from "../../images/rectangle.svg";
 import tick from "../../images/good_tick.svg";
 
+export const Wrapper = styled.div`
+  font-style: normal;
+  padding-top: 40px;
+  @media screen and (max-width: 768px) {
+    padding-top: 25px;
+  }
+  @media screen and (max-width: 640px) {
+    padding-top: 10px;
+  }
+`;
 export const Button = styled.a`
   width: 53px;
   height: 19px;
@@ -34,16 +44,22 @@ export const Section1Heading1 = styled.div`
   font-weight: 500;
   font-size: 50px;
   line-height: 70px;
-
   color: var(--lightblack);
   z-index: 1;
-
   text-shadow: 0px 2px 4px var(--primary);
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    font-size: 40px;
+    line-height: 50px;
+  }
 `;
 
 export const Section1Text = styled.div`
-  width: 555px;
-  height: 90px;
+  width: auto;
+  height: auto;
   left: 150px;
   top: 366.77px;
   font-weight: normal;
@@ -55,7 +71,6 @@ export const Section1Text = styled.div`
 `;
 
 export const Section1Button = styled.div`
-  max-width: 250px;
   height: 60px;
   background: var(--primary);
   border-radius: 4px;
@@ -67,6 +82,10 @@ export const Section1Button = styled.div`
   :hover {
     color: #ba55ba;
     background-color: #eee;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
   }
 `;
 
@@ -88,6 +107,11 @@ export const Section3Image = styled.img`
   height: 296px;
   left: 74px;
   top: 1051px;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    height: auto;
+  }
 `;
 
 export const SectionUL = styled.ul`
